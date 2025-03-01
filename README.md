@@ -101,19 +101,19 @@ Repository Structure:
 ---------------------
 network/
   ├─ src/
-  │     capture.py
+  │    └─ capture.py
   └─ tests/
-         ├─ dns/
-         │      dns_server.py
-         ├─ http/
-         │      http_server.py
-         │      http_client.py
-         └─ tls/
-                cert.pem
-                key.pem
-                tls_server.py
-                tls_client.py
-         ReadMe.md
+       ├─ dns/
+       │     └─ dns_server.py
+       ├─ http/
+       │     ├─ http_server.py
+       │     └─ http_client.py
+       └─ tls/
+             ├─ cert.pem
+             ├─ key.pem
+             ├─ tls_server.py
+             └─ tls_client.py
+       └─ ReadMe.md
 
 Dependencies:
 -------------
