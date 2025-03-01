@@ -99,6 +99,7 @@ $ sudo python3 capture.py -i eth0
 
 Repository Structure:
 ---------------------
+```
 network/
   ├─ src/
   │    └─ capture.py
@@ -114,6 +115,7 @@ network/
              ├─ tls_server.py
              └─ tls_client.py
        └─ ReadMe.md
+```
 
 Dependencies:
 -------------
