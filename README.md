@@ -75,6 +75,7 @@ Sample Output:
 --------------
 Example using the loopback interface:
 --------------------------------------------------
+```
 $ sudo python3 capture.py -i lo
 
 2025-02-28 20:53:55.148597 HTTP 127.0.0.1:50670 -> 127.0.0.1:8080 localhost:8080 GET /test
@@ -83,10 +84,12 @@ $ sudo python3 capture.py -i lo
 2025-02-28 20:54:28.606676 DNS 127.0.0.1:35072 -> 127.0.0.1:5353 www.example.com
 2025-02-28 20:55:14.050267 TLS 127.0.0.1:56120 -> 127.0.0.1:8443 localhost
 2025-02-28 20:55:14.050800 TLS 127.0.0.1:56120 -> 127.0.0.1:8443 localhost
+```
 --------------------------------------------------
 
 Example capturing live traffic on eth0 (e.g., for amazon.com and aniwatch.com):
 --------------------------------------------------
+```
 $ sudo python3 capture.py -i eth0
 
 2025-02-28 21:06:18.534492 DNS 192.168.80.130:42822 -> 192.168.80.2:53 ads-img.mozilla.org
@@ -95,28 +98,28 @@ $ sudo python3 capture.py -i eth0
 2025-02-28 21:06:19.628500 TLS 192.168.80.130:43334 -> 23.202.154.76:443 www.amazon.com
 ...
 2025-02-28 21:06:26.027978 HTTP 192.168.80.130:42048 -> 104.18.38.233:80 ocsp.sectigo.com POST /
+```
 --------------------------------------------------
 
 Repository Structure:
 ---------------------
 ```
 network/
-  ├─ src/
-  │    └─ capture.py
-  └─ tests/
-       ├─ dns/
-       │     └─ dns_server.py
-       ├─ http/
-       │     ├─ http_server.py
-       │     └─ http_client.py
-       └─ tls/
-             ├─ cert.pem
-             ├─ key.pem
-             ├─ tls_server.py
-             └─ tls_client.py
-       └─ ReadMe.md
+├── src/
+│   └── capture.py
+├── tests/
+│   ├── dns/
+│   │   └── dns_server.py
+│   ├── http/
+│   │   ├── http_server.py
+│   │   └── http_client.py
+│   └── tls/
+│       ├── cert.pem
+│       ├── key.pem
+│       ├── tls_server.py
+│       └── tls_client.py
+└── README.md
 ```
-
 Dependencies:
 -------------
 - Python 3.x
